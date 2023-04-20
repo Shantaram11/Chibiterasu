@@ -129,11 +129,11 @@ class DesktopPet(QWidget):
 					time.sleep(delta_time)
 		# Determine whether the action is executed/executed, and the random selection continues to climb/stop
 		if self.action_pointer == self.action_max_len or (self.action_images != self.pet_images[2] and self.action_images != self.pet_images[3]):
-			random_num = random.randint(1, 10)  # 随机动作
+			random_num = random.randint(1, 10)  # random action
 			if random_num in range(1, 7):
-				self.action_images = self.pet_images[3]  # 静止不动
+				self.action_images = self.pet_images[3]  # unmove
 			else:
-				self.action_images = self.pet_images[2]  # 向上攀爬
+				self.action_images = self.pet_images[2]  # climb
 			self.action_max_len = len(self.action_images)
 			self.action_pointer = 0
 
