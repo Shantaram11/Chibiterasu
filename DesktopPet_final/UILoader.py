@@ -115,7 +115,7 @@ class UILoader(QMainWindow):
         self.actFrequencySlider = self.mainWindow.ActFrequencySlider
         self.actFrequencySlider.valueChanged.connect(
             lambda value: self.ShowValue(self.actFrequencyLabel,
-                                         "activity frequency: " + str(self.actFrequencySlider.value())))
+                                         "Activity frequency: " + str(self.actFrequencySlider.value())))
         self.actFrequencySlider.valueChanged.connect(lambda value: self.SetActivityFrequency(self.actFrequencySlider.value()))
         self.activityFrequency = 6
 
@@ -125,7 +125,7 @@ class UILoader(QMainWindow):
         self.soundValueSlider = self.mainWindow.soundValueSlider
         self.soundValueSlider.valueChanged.connect(
             lambda value: self.ShowValue(self.soundValueLabel,
-                                         "sound value: " + str(self.soundValueSlider.value())))
+                                         "Sound value: " + str(self.soundValueSlider.value())))
         self.soundValueSlider.valueChanged.connect(lambda value: self.SetSoundValue(self.soundValueSlider.value()))
         self.soundValue = 25
 
